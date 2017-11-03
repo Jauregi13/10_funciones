@@ -30,6 +30,26 @@ public class Ejercicios {
 		return valorMin;
 
 	}
+	public static int[] min_max(int[] numeros){
+		int valorMin = 0;
+		int valorMax = 0;
+		for (int i = 0; i < numeros.length; i++){
+			if (i == 0){
+				valorMin = numeros[i];
+				valorMax = numeros[i];
+			}
+			if(valorMin > numeros[i]){
+				valorMin = numeros[i];
+			}
+			if(valorMax < numeros[i]){
+				valorMax = numeros[i];
+			}
+		}
+		
+		int[] valores = { valorMin, valorMax};
+		return valores;
+		
+	}
 
 	static double media(int[] numeros) {
 		int valores = 0;
@@ -82,6 +102,13 @@ public class Ejercicios {
 		double nuevo_salario = aumento(salario, porcentaje);
 		
 		System.out.printf("%.2f", nuevo_salario);
+		
+		int[] minMax = min_max(numeros);
+		
+		System.out.println("\nEstos son los valores maximos y minimos del array:");
+		
+		System.out.println(minMax[1] + " " + minMax[0]);
+	
 		
 
 	}
