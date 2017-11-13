@@ -2,7 +2,11 @@
 public class Ejercicios {
 	
 	//funciones
-	
+	/*
+	 * Para sacar el valor maximo de los valores del array
+	 * @param numeros array de integers
+	 * @return un integer que sera el valor maximo
+	 */
 	public static int max(int[] numeros) {
 		int valorMax = 0;
 		for (int i = 0; i < numeros.length; i++){
@@ -16,6 +20,11 @@ public class Ejercicios {
 		return valorMax;
 
 	}
+	/*
+	 * Para sacar el valor minimo de los valores del array
+	 * @param numeros array de integers
+	 * @return un integer que sera el valor minimo
+	 */
 
 	static int min(int[] numeros) {
 		int valorMin = 0;
@@ -30,6 +39,12 @@ public class Ejercicios {
 		return valorMin;
 
 	}
+	/*
+	 * recibira un array de numeros y
+	 * devolvera un array con min y max
+	 * @param numeros un array de integers
+	 * @return array de integers de longitud 2, en el primer indice 
+	 * */
 	public static int[] min_max(int[] numeros){
 		int valorMin = 0;
 		int valorMax = 0;
@@ -50,6 +65,11 @@ public class Ejercicios {
 		return valores;
 		
 	}
+	/*
+	 * Funcion para sacar la media de los valores que estan dentro del array
+	 * @param numeros array de integer
+	 * @return la media de los numeros del array
+	 */
 
 	static double media(int[] numeros) {
 		int valores = 0;
@@ -62,6 +82,13 @@ public class Ejercicios {
 		return media;
 
 	}
+	/*
+	 * Calculo del aumento del salario segun el porcentaje y el valor del
+	 * salario anterior
+	 * @param salario el salario del trabajador
+	 * @param porcentaje el porcentaje de la subida de sueldo
+	 * @return el nuevo salario
+	 */
 	
 	static double aumento(double salario, double porcentaje){
 		double nuevo_salario = 0;
@@ -72,6 +99,10 @@ public class Ejercicios {
 	}
 	
 	//procedimientos
+	
+	/*
+	 * @param numeros
+	 */
 	
 	private static void escribir_array(int[] numeros) {
 		
