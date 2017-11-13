@@ -6,15 +6,12 @@ public class Triangulo {
 		int[][] triangulo = new int[numero][numero];
 		
 		for (int i = 0; i < triangulo.length; i++){
-			int num_array = i + 1;
-			int num_acumulado = 0;
 			for (int j = 0; j < triangulo[i].length; j++){
 				if (j == 0){
-					triangulo[i][j] = num_array;
+					triangulo[i][j] = i + 1;
 				}
 				else if (j <= i){
-					num_acumulado = num_array -i;
-					triangulo[i][j] = num_acumulado - (num_array - i); 
+					triangulo[i][j] = triangulo[i][j-1] - triangulo[i-1][0]; 
 				}
 				else {
 					triangulo[i][j] = 0;
@@ -32,7 +29,15 @@ public class Triangulo {
 		
 		int numero = lector.nextInt();
 		
-		System.out.println(triangulo(numero));
+		int[][] triangulo = triangulo(numero);
+		for (int i = 0; i < triangulo.length; i++){
+			for(int j = 0; j < triangulo[i].length; j++){
+				System.out.print(triangulo[i][j] +" ");
+			}
+			System.out.println("");
+			
+		}
+		
 
 	}
 
