@@ -34,7 +34,7 @@ public class Triangulo {
 			for(int j = 0; j < triangulo[i].length; j++){
 				System.out.print(triangulo[i][j] +" ");
 			}
-			System.out.println("");
+			System.out.println();
 			
 		}
 		
