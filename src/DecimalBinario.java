@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DecimalBinario {
 	
-	public static int contar__divisibles(int numero){
+	public static int contar_divisibles(int numero){
 		int contador = 0;
 		int numero2 = 1;
 		while (numero > 0 && numero2 > 0){
